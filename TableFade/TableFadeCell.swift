@@ -17,36 +17,30 @@ class TableFadeCell: UITableViewCell {
     @IBOutlet weak var mainCellRightConstraint: NSLayoutConstraint!
     @IBOutlet weak var mainCellBottomConstraint: NSLayoutConstraint!
     
-    var initialTopConstraint: NSLayoutConstraint?
-    var initialLeftConstraint: NSLayoutConstraint?
-    var initialRightConstraint: NSLayoutConstraint?
-    var initialBottomConstraint: NSLayoutConstraint?
+    var topPadding: CGFloat = 0
+    var sidePadding: CGFloat = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        initialTopConstraint = mainCellTopConstraint
-        initialLeftConstraint = mainCellLeftConstraint
-        initialRightConstraint = mainCellRightConstraint
-        initialBottomConstraint = mainCellBottomConstraint
         
         self.mainCellView.layer.cornerRadius = 5
         self.mainCellView.clipsToBounds = true
         
         self.selectionStyle = .None
         
+        self.topPadding = mainCellTopConstraint.constant
+        self.sidePadding = mainCellLeftConstraint.constant
         
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        mainCellTopConstraint = initialTopConstraint
-        mainCellLeftConstraint = initialLeftConstraint
-        mainCellRightConstraint = initialRightConstraint
-        mainCellBottomConstraint = initialBottomConstraint
+        mainCellTopConstraint.constant = topPadding
+        mainCellLeftConstraint.constant = sidePadding
+        mainCellRightConstraint.constant = sidePadding
+        mainCellBottomConstraint.constant = topPadding
         
-        self.setNeedsLayout()
     }
 
     

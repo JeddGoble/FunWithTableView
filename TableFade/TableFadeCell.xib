@@ -16,7 +16,7 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPo-RJ-rCR">
                         <rect key="frame" x="10" y="5" width="300" height="140"/>
-                        <color key="backgroundColor" red="0.0" green="0.11594024585055969" blue="0.2341947115384615" alpha="0.80167025862068964" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="0.90466056034482756" colorSpace="calibratedRGB"/>
                     </view>
                 </subviews>
                 <constraints>

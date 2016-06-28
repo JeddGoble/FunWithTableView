@@ -11,7 +11,7 @@ import UIKit
 class TableFadeView: UITableView, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
 
     var cellHeight: CGFloat = 150.0
-    var numberOfRows: Int = 20
+    var numberOfRows: Int = 100
     var initialTopPadding: CGFloat = 5
     var initialSidePadding: CGFloat = 10
     
@@ -69,9 +69,7 @@ class TableFadeView: UITableView, UIScrollViewDelegate, UITableViewDelegate, UIT
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = TableFadeCell()
-        
-        cell = self.dequeueReusableCellWithIdentifier("TableFadeCell") as! TableFadeCell
+        let cell = self.dequeueReusableCellWithIdentifier("TableFadeCell") as! TableFadeCell
         
         return cell
         
