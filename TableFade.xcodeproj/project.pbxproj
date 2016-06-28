@@ -12,6 +12,9 @@
 		AF273C4B1D21D96700C306FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF273C491D21D96700C306FC /* Main.storyboard */; };
 		AF273C4D1D21D96700C306FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF273C4C1D21D96700C306FC /* Assets.xcassets */; };
 		AF273C501D21D96700C306FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF273C4E1D21D96700C306FC /* LaunchScreen.storyboard */; };
+		AF273C5D1D21DA5800C306FC /* TableFadeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF273C5B1D21DA5800C306FC /* TableFadeCell.swift */; };
+		AF273C5E1D21DA5800C306FC /* TableFadeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF273C5C1D21DA5800C306FC /* TableFadeCell.xib */; };
+		AF273C621D21DD0600C306FC /* TableFadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF273C611D21DD0600C306FC /* TableFadeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		AF273C4C1D21D96700C306FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF273C4F1D21D96700C306FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF273C511D21D96700C306FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF273C5B1D21DA5800C306FC /* TableFadeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFadeCell.swift; sourceTree = "<group>"; };
+		AF273C5C1D21DA5800C306FC /* TableFadeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableFadeCell.xib; sourceTree = "<group>"; };
+		AF273C611D21DD0600C306FC /* TableFadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFadeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				AF273C451D21D96700C306FC /* AppDelegate.swift */,
 				AF273C471D21D96700C306FC /* ViewController.swift */,
 				AF273C491D21D96700C306FC /* Main.storyboard */,
+				AF273C611D21DD0600C306FC /* TableFadeView.swift */,
+				AF273C5B1D21DA5800C306FC /* TableFadeCell.swift */,
+				AF273C5C1D21DA5800C306FC /* TableFadeCell.xib */,
 				AF273C4C1D21D96700C306FC /* Assets.xcassets */,
 				AF273C4E1D21D96700C306FC /* LaunchScreen.storyboard */,
 				AF273C511D21D96700C306FC /* Info.plist */,
@@ -124,6 +133,7 @@
 			files = (
 				AF273C501D21D96700C306FC /* LaunchScreen.storyboard in Resources */,
 				AF273C4D1D21D96700C306FC /* Assets.xcassets in Resources */,
+				AF273C5E1D21DA5800C306FC /* TableFadeCell.xib in Resources */,
 				AF273C4B1D21D96700C306FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF273C481D21D96700C306FC /* ViewController.swift in Sources */,
+				AF273C621D21DD0600C306FC /* TableFadeView.swift in Sources */,
+				AF273C5D1D21DA5800C306FC /* TableFadeCell.swift in Sources */,
 				AF273C461D21D96700C306FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

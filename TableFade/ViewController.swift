@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let frame = CGRect(x: 0.0, y: 20.0, width: self.view.frame.size.width, height: self.view.frame.size.height - 20)
+        let tableFadeView = TableFadeView(frame: frame, style: .Plain)
+        self.view.addSubview(tableFadeView)
     }
 
     override func didReceiveMemoryWarning() {
